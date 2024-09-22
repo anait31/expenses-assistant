@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Expenses Assistant</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="bg-gray-200 h-[100vh] overflow-auto flex justify-center">
+        <div class="my-4 w-1/4">
+            <div class="bg-white rounded-lg py-4 px-4">
+                <h2
+                    class="text-center text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                    Programmer Expenses Assistant</h2>
+                <!-- Toggle Section -->
+                <div class="flex mb-5">
+                    <button
+                        class="w-1/2 py-2 rounded-l-md focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600">Assistant</button>
+                    <button
+                        class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-200 text-gray-600 font-semibold">History</button>
+                </div>
+            <!-- Calculation Area -->
+                <div>
+                    <div>
+                        <label for="">Income</label>
+                        <input class="block w-full mt-2 focus:outline-none border-2 p-2 rounded-md " type="number">
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <div class="w-full">
+                            <label for="">Software</label>
+                            <input class="w-full mt-2 block focus:outline-none border-2 p-2 rounded-md" type="number">
+                        </div>
+                        <div class="w-full">
+                            <label for="">Courses</label>
+                            <input class="w-full mt-2 block focus:outline-none border-2 p-2 rounded-md" type="number">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <label for="">Courses</label>
+                        <input class="block w-full mt-2 focus:outline-none border-2 p-2 rounded-md" type="number">
+                    </div>
+                    <button class="btn w-full mt-4 focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600">Calculate</button>
+                    <div class="w-full mt-2">
+                        <label for="">Savings (%)</label>
+                        <input class="w-full mt-2 block focus:outline-none border-2 p-2 rounded-md" type="number">
+                    </div>
+                    <button class="btn w-full mt-4 text-white bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 focus:ring-green-500">Calculate Savings</button>
+                </div>
+                <!-- Result Summary -->
+                 <div class="mt-4 px-4">
+                    <h3 class="text-lg font-semibold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Total Summary</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="">
+                            <p class="font-semibold">Total Exprenses</p>
+                            <p>$ <span>00.00</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-semibold">Balance</p>
+                            <p>$ <span>00.00</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-semibold">Total Exprenses</p>
+                            <p>$ <span>00.00</span></p>
+                        </div>
+                        <div class="">
+                            <p class="font-semibold">Total Exprenses</p>
+                            <p>$ <span>00.00</span></p>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Transaction History -->
+                 <div class="mt-4 bg-slate-300 rounded-md hidden">
+                    <h3 class="pt-4 text-lg font-semibold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Exprenses History</h3>
+                    <div class="p-4">
+                        <p>Date</p>
+                        <p>Income: $<span>00.00</span></p>
+                        <p>Exprenses: $<span>00.00</span></p>
+                        <p>Balance: $<span>00.00</span></p>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

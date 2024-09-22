@@ -63,7 +63,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 document.getElementById('calculate-savings-btn').addEventListener('click', function () {
 
     const savingsPerchantage = getInputFieldValueById('savings-field');
-    console.log(savingsPerchantage);
 
     const income = getInputFieldValueById('income-field');
     const software = getInputFieldValueById('software-field');
@@ -71,19 +70,10 @@ document.getElementById('calculate-savings-btn').addEventListener('click', funct
     const internet = getInputFieldValueById('internet-field');
 
     let remainingBalance = income - (software + courses + internet);
-    console.log(typeof remainingBalance);
-    
-    // let savings = document.getElementById('savings');
-    // savings.innerText = (savingsPerchantage * remainingBalance) / 100;
-    // console.log(remainingBalance - savings);
 
     let totalSavings = parseFloat(document.getElementById('savings').innerText);
     totalSavings = (savingsPerchantage * remainingBalance) / 100;
-    console.log(totalSavings);
     document.getElementById('savings').innerText = totalSavings.toFixed(2);
-
-
-
 
     document.getElementById('balance').innerText = (remainingBalance - totalSavings).toFixed(2);
 
